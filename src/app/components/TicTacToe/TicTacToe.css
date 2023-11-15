@@ -1,0 +1,22 @@
+.game-container {
+    display: flex;
+    border: 1px solid black;
+}
+
+.right-border {
+    border-right: 1px solid gold;
+}
+
+.bottom-border {
+    border-bottom: 1px solid gold;
+}
+
+.x-hover:hover::after {
+    content: 'X';
+    opacity: 0.4;
+}
+
+.o-hover:hover::after {
+    content: 'O';
+    opacity: 0.4;
+}

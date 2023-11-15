@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { getServerSession } from 'next-auth'
-import  SessionProvider  from  '@/app/components/SessionProvider'
-import { NavMenu } from './components/NavMenu'
+import  SessionProvider  from  '@/app/components/SessionProvider/SessionProvider'
+import { NavMenu } from './components/NavMenu/NavMenu'
 
 const inter = Inter({ subsets: ['latin'] })
 

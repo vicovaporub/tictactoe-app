@@ -1,0 +1,16 @@
+.auth-button {
+    display: inline-block;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    background-color: #f0f0f0; 
+    color: #333; 
+  }
+  
+  .auth-button:hover {
+    background-color: #ddd;
+  }
