@@ -20,7 +20,6 @@ export const NavMenu = () => {
     } else {
         return (
             <>
-            <img src={session?.user?.image} alt={session?.user?.name}></img>
             <br/>
             {session?.user?.name} 
             <div className="nav-buttons">
