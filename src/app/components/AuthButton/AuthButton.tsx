@@ -8,7 +8,7 @@ export const AuthButton = () => {
     if (session) {
         return (
             <>
-            <div className="auth-button" onClick={() => signOut({ callbackUrl: '/' })}>Sign Out</div>
+            <div className="auth-button" onClick={() => signOut({ callbackUrl: '/' })}>Sign Out!</div>
             </>
         )
     }
