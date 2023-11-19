@@ -1,7 +1,8 @@
 import '@/app/components/Board/Board.css'
 import { Chunk } from '../Chunk/Chunk'
+import { WinDash } from '../WinDash/WinDash'
 
-export const Board = ({onChunkClick, chunks, userTurn }: any) => {
+export const Board = ({onChunkClick, chunks, userTurn, winClass }: any) => {
     return (
         <div className='board'>
         <Chunk userTurn={userTurn} onClick={() => onChunkClick(0)} value={chunks[0]} className='right-border bottom-border'/>
@@ -13,7 +14,7 @@ export const Board = ({onChunkClick, chunks, userTurn }: any) => {
         <Chunk userTurn={userTurn} onClick={() => onChunkClick(6)} value={chunks[6]} className='right-border'/>
         <Chunk userTurn={userTurn} onClick={() => onChunkClick(7)} value={chunks[7]} className='right-border '/>
         <Chunk userTurn={userTurn} onClick={() => onChunkClick(8)} value={chunks[8]} className=''/>
-        
+        <WinDash winClass={winClass}/>
     </div>
     )
 }

@@ -1,0 +1,57 @@
+.win {
+    position: absolute;
+    background-color: red;
+}
+
+.dash-row-1 {
+    width: 100%;
+    height: 5px;
+    top: 15%;
+}
+
+.dash-row-2 {
+    width: 100%;
+    height: 5px;
+    top: 50%;
+}
+
+.dash-row-3 {
+    width: 100%;
+    height: 5px;
+    top: 85%;
+}
+
+.dash-column-1 {
+    height: 100%;
+    width: 5px;
+    left: 15%;
+}
+
+.dash-column-2 {
+    height: 100%;
+    width: 5px;
+    left: 50%;
+}
+
+.dash-column-3 {
+    height: 100%;
+    width: 5px;
+    left: 85%;
+
+}
+
+.dash-diagonal-1 {
+    width: 90%;
+    height: 5px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(45deg);
+}
+
+.dash-diagonal-2 {
+    width: 90%;
+    height: 5px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(-45deg);
+}
