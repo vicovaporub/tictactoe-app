@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tic Tac Toe
 
-## Getting Started
+## Description
 
-First, run the development server:
+Built with Nextjs, the project is a simple (LOCAL) Tic Tac Toe game with OAuth to test my skills in authentication and laying the ground so I can put a online multiplayer in the future.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+You can access the project in this Vercel link [Tic Tac Toe](https://tictactoe-app-tau.vercel.app)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Table of Contents
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Installation](#installation)
+- [Usage](#usage)
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/vicovaporub/tictactoe-app.git
+   cd tictactoe-app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Install dependecies:
+    ```bash
+    npm install 
 
-## Deploy on Vercel
+3. Start:
+    ```bash
+    npm run dev
+    (Open the browser and access the application at `http://localhost:3000`)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Usage
+- You can login with either Google or GitHub account
+- The board will appear after logging in, each click changes the turn from the default 'X' to 'O'
