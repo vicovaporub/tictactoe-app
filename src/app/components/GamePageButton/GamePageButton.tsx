@@ -11,11 +11,7 @@ export const GamePageButton = () => {
   
 
     if (!session) {
-        return (
-          <div className="game-page-button" onClick={() => signIn()}>
-            Play
-          </div>
-        )
+        return 
     } else {
         return (
         <div className="game-page-button" onClick={handlePlayClick}>Play</div>
