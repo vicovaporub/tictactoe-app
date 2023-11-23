@@ -1,35 +1,32 @@
 'use client'
 import { useSession } from "next-auth/react"
 import { AuthButton } from "../AuthButton/AuthButton"
-import { GamePageButton } from "../GamePageButton/GamePageButton"
 import '@/app/components/NavMenu/NavMenu.css'
+
 
 export const NavMenu = () => {
     const { data: session } = useSession()
 
-    if (!session) {
-        return (
-            <>
-            <div className="nav-buttoons">
-            <AuthButton />
-            <GamePageButton />
-            </div>
-            </>
-        )
-
-    } else {
-        return (
-            <>
-            <br/>
-            {session?.user?.name} 
-            <div className="nav-buttons">
-            <AuthButton />
-            <GamePageButton />
-            </div>
-            </>
-        )
+ return (
+    <div className="nav-container">
+    {session ? (
+      <>
+        <div className="user-info">
+        <img className="user-pic"
+                src={session?.user?.image}
+                alt="user pic" />
+          {session?.user?.name}
+          </div>
+        <div className="nav-buttons">
+          <AuthButton />
+        </div>
+      </>
+    ) : (
+      <div className="nav-buttons">
+        <AuthButton />
+      </div>
+    )}
+  </div>
+ )
     }
 
-
-
-}

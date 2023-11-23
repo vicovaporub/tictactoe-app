@@ -1,4 +1,24 @@
-.nav-buttons {
-display: flex;
-justify-content: center;
-}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .user-info {
+    margin-right: 10px;
+  }
+  
+  .user-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 5rem;
+    margin-right: 15px;
+  }
