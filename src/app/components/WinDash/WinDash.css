@@ -12,13 +12,13 @@
 .dash-row-2 {
     width: 100%;
     height: 5px;
-    top: 50%;
+    top: 49%;
 }
 
 .dash-row-3 {
     width: 100%;
     height: 5px;
-    top: 85%;
+    top: 82.5%;
 }
 
 .dash-column-1 {
@@ -30,20 +30,20 @@
 .dash-column-2 {
     height: 100%;
     width: 5px;
-    left: 50%;
+    left: 48.7%;
 }
 
 .dash-column-3 {
     height: 100%;
     width: 5px;
-    left: 85%;
+    left: 82.5%;
 
 }
 
 .dash-diagonal-1 {
     width: 90%;
     height: 5px;
-    top: 50%;
+    top: 49.2%;
     left: 5%;
     transform: skewY(45deg);
 }
@@ -51,7 +51,7 @@
 .dash-diagonal-2 {
     width: 90%;
     height: 5px;
-    top: 50%;
+    top: 49.2%;
     left: 5%;
     transform: skewY(-45deg);
 }
