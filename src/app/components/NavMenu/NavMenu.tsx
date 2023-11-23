@@ -13,7 +13,7 @@ export const NavMenu = () => {
       <>
         <div className="user-info">
         <img className="user-pic"
-                src={session?.user?.image}
+                src={`${session?.user?.image}`}
                 alt="user pic" />
           {session?.user?.name}
           </div>
