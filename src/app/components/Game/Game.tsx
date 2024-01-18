@@ -1,6 +1,7 @@
 import { getServerSession } from "next-auth"
 import { TicTacToe } from "../TicTacToe/TicTacToe"
 import '@/app/components/Game/Game.css'
+import GamePageSocket from "../GamePageSocket/GamePageSocket"
 
 const Game = async () => {
 
@@ -16,9 +17,7 @@ const Game = async () => {
     }
 
     return (
-        <div className="game-page">
-        <TicTacToe/>
-        </div>
+        <GamePageSocket />
     )
 }
 
