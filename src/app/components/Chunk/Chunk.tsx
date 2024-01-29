@@ -1,6 +1,13 @@
 import '@/app/components/Chunk/Chunk.css'
 
-export const Chunk = ( {className, value, onClick, userTurn}: any ) => {
+interface ChunkProps {
+    className: string;
+    value: string | null;
+    onClick: () => void;
+    userTurn: string;
+}
+
+export const Chunk = ( {className, value, onClick, userTurn}: ChunkProps ) => {
 
     let hoverClass = null
 

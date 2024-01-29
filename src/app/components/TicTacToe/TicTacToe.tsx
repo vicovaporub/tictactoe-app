@@ -45,7 +45,7 @@ const winCondition = [
 
 
 
-const checkWinner = (chunks: any, setWinClass: React.Dispatch<React.SetStateAction<string>>, setGameProgress: React.Dispatch<React.SetStateAction<string>>) => {
+const checkWinner = (chunks: string[], setWinClass: React.Dispatch<React.SetStateAction<string>>, setGameProgress: React.Dispatch<React.SetStateAction<string>>) => {
 
   if (!chunks) {
     return
@@ -68,7 +68,7 @@ const checkWinner = (chunks: any, setWinClass: React.Dispatch<React.SetStateActi
         }
     }
 
-    const drawState = chunks.every((chunk: any) => chunk !== null) 
+    const drawState = chunks.every((chunk) => chunk !== null) 
 
       if(drawState) {
         setGameProgress(GameProgress.draw)
@@ -90,7 +90,7 @@ export const TicTacToe = () => {
 
 
   
-  const handleChunkClick = (e: any) => {
+  const handleChunkClick = (e: number) => {
     if (gameProgress !== GameProgress.inProgress) {
       return
     }
@@ -109,7 +109,7 @@ export const TicTacToe = () => {
   };
 
 
-  const handleResetClick = (e: any) => {
+  const handleResetClick = () => {
     setChunks(Array(9).fill(null))
     setUserTurn(playerX)
     setWinClass('')

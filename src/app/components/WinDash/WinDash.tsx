@@ -1,6 +1,10 @@
 import '@/app/components/WinDash/WinDash.css'
 
-export const WinDash = ({ winClass }: any) => {
+interface WinDashProps {
+    winClass: string;
+}
+
+export const WinDash = ({ winClass }: WinDashProps) => {
     return (
         <div className={`win ${winClass}`}></div>
     )

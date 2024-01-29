@@ -1,6 +1,7 @@
 import '@/app/components/GameOver/GameOver.css'
 
 
+
 export const GameProgress = {
     inProgress: 'Game still running',
     xWins: 'Player X won',
@@ -8,8 +9,11 @@ export const GameProgress = {
     draw: 'DRAW'
 }
 
+interface GameOverProps {
+    gameProgress: string;
+}
 
-export const GameOver = ({ gameProgress }: any) => {
+export const GameOver = ({ gameProgress }: GameOverProps ) => {
 
 
     switch (gameProgress) {

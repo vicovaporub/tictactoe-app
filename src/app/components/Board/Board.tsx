@@ -2,7 +2,14 @@ import '@/app/components/Board/Board.css'
 import { Chunk } from '../Chunk/Chunk'
 import { WinDash } from '../WinDash/WinDash'
 
-export const Board = ({onChunkClick, chunks, userTurn, winClass }: any) => {
+interface BoardProps {
+    onChunkClick: (chunkIndex: number) => void;
+    chunks: string[];
+    userTurn: string;
+    winClass: string;
+}
+
+export const Board = ({onChunkClick, chunks, userTurn, winClass }: BoardProps) => {
     return (
         <div className='board'>
         <Chunk userTurn={userTurn} onClick={() => onChunkClick(0)} value={chunks[0]} className='right-border bottom-border'/>

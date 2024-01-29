@@ -1,7 +1,12 @@
 import '@/app/components/ResetButton/ResetButton.css'
 import { GameProgress } from '../GameOver/GameOver'
 
-export const ResetButton = ({ gameProgress, onReset }: any) => {
+interface ResetButtonProps {
+    gameProgress: string;
+    onReset: () => void
+}
+
+export const ResetButton = ({ gameProgress, onReset }: ResetButtonProps) => {
     if (gameProgress === GameProgress.inProgress) {
         return
     }
